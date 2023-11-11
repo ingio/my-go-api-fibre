@@ -1,4 +1,4 @@
-# testing go fibre
+# testing go fiber API
 ![alt text](https://gofiber.io/assets/images/logo.svg)
 ```
 curl http://localhost:8080/health
