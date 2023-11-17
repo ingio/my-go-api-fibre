@@ -16,14 +16,14 @@ func main() {
 
 	// Middleware
 	app.Use(logger.New())
-
+	
 	log.Fatal(app.Listen(":8080"))
 }
 
 // Handlers
 func health(c *fiber.Ctx) error {
-	return c.SendString("Health check ✅")
+	return c.SendString("Health check ✅\n")
 }
 func hello(c *fiber.Ctx) error {
-	return c.SendString("I made a ☕ for you!")
+	return c.SendString("I made a ☕ for you!\n")
 }

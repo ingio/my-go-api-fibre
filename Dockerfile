@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/cbl-mariner/distroless/base:2.0-nonroot
+FROM debian
 
 WORKDIR /app
+
 COPY server /app
 
-USER nonroot:nonroot
-CMD [ "/app/server" ]
+#CMD [ "/app/server" ]

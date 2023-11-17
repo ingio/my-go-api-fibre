@@ -17,6 +17,11 @@ build:
 	env GOOS=linux CGO_ENABLED=0 go build -o server ./cmd
 	@echo "Done!"
 
+build_arm:
+	@echo "Building server binary..."
+	env GOARCH=arm64 GOOS=linux CGO_ENABLED=0 go build -o server ./cmd
+	@echo "Done!"
+
 build_start:
 	@echo "Building server binary and starting server..."
 	env GOOS=linux CGO_ENABLED=0 go build -o server ./cmd
