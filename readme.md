@@ -2,7 +2,7 @@
 ![alt text](https://gofiber.io/assets/images/logo.svg)
 ```
 curl http://localhost:8080/health
-
+curl http://localhost:8080/hello
 ```
 
 ## source of examples  
