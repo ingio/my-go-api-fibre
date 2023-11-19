@@ -5,7 +5,7 @@ services:
   api:
     build:
       context: ./
-      dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile.multistage
     restart: always
     ports:
       - "8080:8080"
