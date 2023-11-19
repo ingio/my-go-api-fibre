@@ -12,8 +12,3 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-    environment:
-      AZURE_COSMOS_ENDPOINT: "x"
-      AZURE_COSMOS_KEY: "x"
-      AZURE_COSMOS_DB: "x"
-      AZURE_COSMOS_CONTAINER: "x"

@@ -22,6 +22,4 @@ COPY --from=build-stage /server /server
 
 EXPOSE 8080
 
-USER nonroot:nonroot
-
 ENTRYPOINT ["/server"]
