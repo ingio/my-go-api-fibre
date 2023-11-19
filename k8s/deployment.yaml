@@ -1,3 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: myapi
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,7 +22,7 @@ spec:
     spec:
       containers:
       - name: myapi
-        image: ingihome/myapi:arm64
+        image: <image name:tag>
         ports:
         - containerPort: 8080
 ---
