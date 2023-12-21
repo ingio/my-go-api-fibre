@@ -11,6 +11,7 @@ func main() {
 	app := fiber.New()
 
 	// Routes
+	app.Get("/", helloRoot)
 	app.Get("/health", health)
 	app.Get("/hello", hello)
 
@@ -21,6 +22,9 @@ func main() {
 }
 
 // Handlers
+func helloRoot(c *fiber.Ctx) error {
+	return c.SendString("This is Root. Nothing here...\n")
+}
 func health(c *fiber.Ctx) error {
 	return c.SendString("Health check ✅\n")
 }
