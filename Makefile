@@ -4,12 +4,12 @@ start:
 
 up:
 	@echo "Starting Docker images..."
-	docker-compose up -d
+	docker compose up -d
 	@echo "Docker images started!"
 
 down:
 	@echo "Stopping docker compose..."
-	docker-compose down
+	docker compose down
 	@echo "Done!"
 
 build:
@@ -30,14 +30,14 @@ build_start:
 
 up_build: build
 	@echo "Stopping docker images (if running...)"
-	docker-compose down
+	docker compose down
 	@echo "Building (when required) and starting docker images..."
-	docker-compose up --build -d
+	docker compose up --build -d
 	@echo "Docker images built and started!"
 
 up_buildarm: build_arm
 	@echo "Stopping docker images (if running...)"
-	docker-compose down
+	docker compose down
 	@echo "Building (when required) and starting docker images..."
-	docker-compose up --build -d
+	docker compose up --build -d
 	@echo "Docker images built and started!"
